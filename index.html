@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./tailwindstyle.css" rel="stylesheet">
+    <link href="./regular_style.css" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden min-h-screen flex items-center justify-center bg-slate-200">
+
+    <main id="main" class=" bg-white rounded-2xl shadow-2xl space-y-10 px-12 py-12 justify-center items-center flex flex-col">
+
+
+        <div class="text-2xl font-bold  text-blue-800">Le jeu du Morpion</div>
+
+        <div id="annonceur-box" class="overflow-hidden w-full font-semibold flex justify-center items-center bg-blue-500 rounded-lg h-14">
+            <div class="h-full flex items-center" id="annonceur"></div>
+        </div>
+        <div class="grid grid-cols-3 place-items-stretch grid-rows-3 w-60 h-60 md:w-80 md:h-80">
+            <div id="a-0" class="cell"></div>
+            <div id="a-1" class="cell"></div>
+            <div id="a-2" class="cell"></div>
+            <div id="b-0" class="cell"></div>
+            <div id="b-1" class="cell"></div>
+            <div id="b-2" class="cell"></div>
+            <div id="c-0" class="cell"></div>
+            <div id="c-1" class="cell"></div>
+            <div id="c-2" class="cell"></div>
+        </div>
+
+        <div id="restart" class="cursor-pointer hover:bg-blue-400 bg-blue-500 rounded-lg text-black font-semibold flex items-center justify-center w-2/3 h-12">Recommencer</div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

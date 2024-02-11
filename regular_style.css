@@ -1,0 +1,92 @@
+.cell {
+    background-color: rgb(218, 212, 212);
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.cell:hover {
+    background-color:rgb(244, 237, 237);
+}
+
+.invalid-cell {
+    border: 2px solid red;
+    animation: shake 0.5s ease-in-out;
+}
+
+.player-won {
+    border: 2px solid green;
+}
+
+.green-background {
+    background-color: green;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px) translateY(5px);
+    }
+    50% {
+        transform: translateX(5px) translateY(-5px);
+    }
+    75% {
+        transform: translateX(-5px) translateY(5px);
+    }
+    100% {
+        transform: translateX(5px) translateY(-5px);
+    }
+}
+
+.turn-around {
+    animation: turnAround 0.5s;
+  }
+  
+@keyframes turnAround {
+    0% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    49% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    51% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.change-board {
+    animation: changeBoard 1s ease-out;
+}
+
+@keyframes changeBoard {
+    0% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    49% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    51% {
+        transform: translateX(150%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
